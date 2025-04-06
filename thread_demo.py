@@ -8,7 +8,7 @@ client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 def create_assistant():
     """Create a new assistant"""
     assistant = openai.beta.assistants.create(
-        name="Math Tutor",
+        name="Document Assistant",
         instructions="You are a helpful document assistant. Help users answer questions relating to passport renewal.",
         tools=[],
         model="gpt-4-turbo-preview"
